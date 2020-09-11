@@ -157,4 +157,29 @@ button:hover{
     .title-container h1 {
         color:white;
     }
+    .title-container hr {
+        width:100%;
+    }
+    /* Artists-container */
+    .artists-container {
+        display:flex;
+        flex-flow:column;
+        justify-content:space-around;
+        margin-bottom: 10%;;
+    }
+    .artists-container .artist {
+        display:flex;
+        flex-flow:column;
+        justify-content:center;
+        width:100%;
+        margin-bottom: 10%;
+    }
+    .artists-container .artist img{
+        width:75%;
+        height:75%;
+    }
+    .artist .bio {
+        width:100%;
+        margin:0 auto;
+    }
 }
