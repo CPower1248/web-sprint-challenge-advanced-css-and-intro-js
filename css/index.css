@@ -14,12 +14,15 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {  
 margin: 0;  
 padding: 0;  
-border: 0;  
+/*border: 0;  */
 font-size: 100%;  
 font: inherit;  
 vertical-align: baseline;  
 }
 /*GENERAL STYLES*/
+*{
+    border:1px solid grey;
+}
 html{
     font-size:62.5%;
 }
@@ -133,4 +136,50 @@ button:hover{
 }
 .artist img{
     width:100%;
+}
+
+@media (max-width:500px) {
+    /* Header */
+    header nav {
+        display:flex;
+        justify-content:space-evenly;
+        width:60%;
+    }
+    header a {
+        display:flex;
+        justify-content:space-evenly;
+        font-size:2rem;
+    }
+    /* Title-container */
+    .title-container div {
+        width:100%;
+    }
+    .title-container h1 {
+        color:white;
+    }
+    .title-container hr {
+        width:100%;
+    }
+    /* Artists-container */
+    .artists-container {
+        display:flex;
+        flex-flow:column;
+        justify-content:space-around;
+        margin-bottom: 10%;;
+    }
+    .artists-container .artist {
+        display:flex;
+        flex-flow:column;
+        justify-content:center;
+        width:100%;
+        margin-bottom: 10%;
+    }
+    .artists-container .artist img{
+        width:75%;
+        height:75%;
+    }
+    .artist .bio {
+        width:100%;
+        margin:0 auto;
+    }
 }
